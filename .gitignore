@@ -1,0 +1,66 @@
+# ===== 通用 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.bak
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+*.swp
+*~
+# 如需共享 Pylance / 调试配置，改为忽略其中具体文件而非整个目录
+
+# ===== Python / 环境 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ===== 数据 / 产物（点云与 CAD 模型通常很大，默认不入库）=====
+# 若需提交少量样例，请删除对应扩展名或加 ! 白名单
+data/
+datasets/
+outputs/
+runs/
+checkpoints/
+weights/
+*.ply
+*.pcd
+*.xyz
+*.las
+*.laz
+*.e57
+*.bin
+*.step
+*.stp
+*.brep
+*.igs
+*.iges
+*.stl
+*.obj
+*.off
+*.gltf
+*.glb
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ===== DSBAgent 工具自带的技能包（非本项目内容）=====
+/.dsb/skills/
+# agent 临时草稿区
+/.dsb/tmp/

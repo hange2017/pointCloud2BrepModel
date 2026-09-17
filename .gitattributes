@@ -1,0 +1,21 @@
+# 默认按文本处理并在仓库内统一为 LF，检出时由 core.autocrlf 决定
+* text=auto
+
+# 明确二进制，避免换行符转换破坏文件
+*.docx binary
+*.doc binary
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.zip binary
+*.7z binary
+*.tar binary
+*.gz binary
+
+# Markdown 保持 LF，便于 diff
+*.md text eol=lf
